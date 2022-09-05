@@ -4,6 +4,7 @@
     --icons: rgba(245, 152, 12, 0.911);
     --white: rgb(255,255,255);
     --gray: #a6ad9c;
+    --form: #ddab22ab;
 }
 *{
     padding: 0;
@@ -62,7 +63,7 @@
 .presentation strong{
     color: var(--icons);
 }
-.svg_icons{
+.svg_icons {
     display: flex;
     gap: 1.5rem;
     font-size: 3rem;
@@ -75,6 +76,18 @@
 }
 .bxl-netlify{
     color: var(--icons);
+}
+.svg_icons i{
+    transition:  background-color 0.5s, color 0.5s transform 0.5;
+}
+.svg_icons i:hover{
+    background-color: var(--icons);
+    color: var(--gray);
+    border-radius: 70%;
+    font-size: 4rem;
+}
+.svg_icons i:active{
+    transform: rotateZ(100deg);
 }
 .about_me{
     padding: 1.5rem;
@@ -173,4 +186,45 @@ ul{
     text-align: end;
     color: var(--icons);
     font-size: 2rem;
+}
+.My_Proyects{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.Proyects-My_Proyects{
+    display: grid;
+    gap: 2rem;
+    justify-content: space-around;
+}
+.contact{
+    background-color: var(--BG-presentation);
+    min-height: 640px;
+    padding-top: 3rem;
+    text-align: center;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+input, textarea {
+    border: none;
+    padding: 1rem;
+    outline: none;
+    border-radius: 20px;
+    background-color: var(--form);
+    color: var(--white);
+}
+.Contect-form{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+textarea{
+    width: 240px;
 }
