@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <section class="BG_Portfolio">
+
+        <div class="PresentationFather">
+            <div class="presentation">
+                <h1>Juan D. Durán A</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <img src="./Images/firma.png" alt="Photo_Profile">
+                <h3><strong>3 años</strong> de experiencia brindando soporte técnico</h3>
+                <div class="svg_icons">
+                    <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="#"> <i class='bx bxl-github'></i> </a>
+                    <a href="#"> <i class='bx bxl-netlify' ></i> </a>
+                </div>
+            </div>
+            <section class="BG_presentation">
+            </section>
+        </div>
+        <div class="about_me">
+            <h1>Acerca de mí</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, rem praesentium? Beatae deserunt dignissimos reprehenderit, sapiente odit eum expedita earum.</p>
+            <div class="content_slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="item swiper-slide">
+                        <div>
+                            <img class= "item_img"src="./Images/cun-1-638.jpg" alt="CUN">
+                        </div>
+                        <div class="item_info">
+                            <p><strong>Corporación Unificada Nacional</strong></p>
+                            <p>2010-2014</p>
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <div>
+                            <img class= "item_img"src="./Images/academlo.jpg" alt="academlo">
+                        </div>
+                        <div class="item_info">
+                            <p><strong>Academlo</strong></p>
+                            <p>2010-2014</p>
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <div>
+                            <img class= "item_img"src="./Images/Pasquilla.jpg" alt="Pasquilla">
+                        </div>
+                        <div class="item_info">
+                            <p><strong>Pasquilla</strong></p>
+                            <p>2010-2014</p>
+                        </div>
+                    </div>
+                    <div class="item swiper-slide">
+                        <div>
+                            <img class= "item_img"src="./Images/Centrodebiotecnologia.png" alt="CBA">
+                        </div>
+                        <div class="item_info">
+                            <p><strong>C.B.A Sena</strong></p>
+                            <p>2010-2014</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="experience">
+            <h1>Experiencia</h1>
+            <div class="experiencie-Business">
+                <div>
+                    <a href="#"><img src="./Images/academlo.jpg" alt=""></a>
+                    <ul>
+                        <h4>Sonda</h4>
+                        <li>Tecnico soporte en sitio</li>
+                        <li>2015-2017</li>
+                    </ul>
+                    <h3>2 años</h3>
+                </div>
+
+                <div>
+                    <a href="#"><img src="./Images/academlo.jpg" alt=""></a>
+                    <ul>
+                        <h4>Sonda</h4>
+                        <li>Tecnico soporte en sitio</li>
+                        <li>2015-2017</li>
+                    </ul>
+                    <h3>2 años</h3>
+                </div>
+
+                <div>
+                    <a href="#"><img src="./Images/academlo.jpg" alt=""></a>
+                    <ul>
+                        <h4>Sonda</h4>
+                        <li>Tecnico soporte</li>
+                        <li>2015-2017</li>
+                    </ul>
+                    <h3>2 años</h3>
+                </div>
+            </div>
+        </div>
+        <div class="aptitudes">
+            <h1>Mis Habilidades</h1>
+            <ul class="aptitudes-percentage">
+                <strong>95%</strong>
+                <li>Mobile app desing</li>
+                <strong>95%</strong>
+                <li>Web desing</li>
+                <strong>95%</strong>
+                <li>Motion desing</li>
+                <strong>95%</strong>
+                <li>Creación y mantenimiento de sistemas de diseño</li>
+                <strong>95%</strong>
+                <li>Gestión de Proyectos</li>
+            </ul>
+        </div>
+        <div class="My_Proyects">
+    
+            <!-- hacerlo con slider -->
+        </div>
+        <div class="contact">
+            <form action=""></form>
+        </div>
+        <footer>
+    
+            
+        </footer>
+        <a href="#"><i class='bx bx-menu'></i></a>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+            slideShadows: true,
+            shadow: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        }); 
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

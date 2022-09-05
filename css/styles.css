@@ -1,0 +1,176 @@
+:root{
+    --BG-portfolio: #1e2331;
+    --BG-presentation: hsla(248, 24%, 24%, 0.842);
+    --icons: rgba(245, 152, 12, 0.911);
+    --white: rgb(255,255,255);
+    --gray: #a6ad9c;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bx-menu{
+    position: fixed;
+    top: 1rem;
+    left:1rem;
+    font-size: 2rem;
+    color: var(--icons);
+}
+.BG_Portfolio {
+    width: 100%;
+    height: 100%;
+    background-color: var(--BG-portfolio);
+}
+/* .PresentationFather{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+} */
+.presentation{
+    min-height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2rem;
+    color: var(--gray);
+    padding: 2rem 0.2rem;
+    text-align: center;
+}
+.presentation h1{
+    font-size: 2.2rem;
+}
+.presentation h4{
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.presentation img{
+    width: 180px;
+    height: 180px;
+    border-radius: 2.5rem;
+}
+.presentation h3{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.presentation strong{
+    color: var(--icons);
+}
+.svg_icons{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 3rem;
+}
+.bxl-linkedin-square{
+    color: var(--icons);
+}
+.bxl-github{
+    color: var(--icons);
+}
+.bxl-netlify{
+    color: var(--icons);
+}
+.about_me{
+    padding: 1.5rem;
+    min-height: 640px;
+    background-color: var(--BG-presentation);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.about_me p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.item_img{
+    width: 120px;
+    height: 80px;
+}
+.content_slider{
+    text-align: center;
+    align-items: center;
+}
+.swiper-wrapper{
+    max-width: 240px;
+}
+.experience {
+    padding-top: 2rem;
+    min-height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.experiencie-Business div{
+    width: 300px;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1.5fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+}
+ul{
+    list-style: none;
+}
+.experiencie-Business h4{
+    font-size: 1.5rem;
+}
+.experiencie-Business li, h4{
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--gray);
+}
+.experiencie-Business img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.experiencie-Business h3{
+    font-size: 1.3rem;
+    color: var(--gray);
+}
+/* .BG_presentation{
+    background-color: rgba(11, 201, 74, 0.534);
+    width: 70%;
+    min-height: 300px;
+    top: 0;
+} */
+
+.aptitudes{
+    color: var(--white);
+    font-size: 1.4rem;
+    min-height: 640px;
+    padding-top: 3rem;
+    background-color: var(--BG-presentation);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.aptitudes-percentage{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+.aptitudes-percentage li{
+    text-align: start;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+.aptitudes-percentage strong{
+    text-align: end;
+    color: var(--icons);
+    font-size: 2rem;
+}
