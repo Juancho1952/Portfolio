@@ -3,20 +3,50 @@
     --BG-presentation: hsla(248, 24%, 24%, 0.842);
     --icons: rgba(245, 152, 12, 0.911);
     --white: rgb(255,255,255);
-    --gray: #a6ad9c;
+    --gray: #a6ad9ce7;
+    --black: #000000;
     --form: #ddab2231;
+    --hambur: rgba(245, 152, 12, 0.568);
+    --hamburhidden: rgba(245, 152, 12, 0.281);
 }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
 }
 .bx-menu{
     position: fixed;
     top: 1rem;
     left:1rem;
     font-size: 2rem;
-    color: var(--icons);
+    color: var(--black);
+    cursor: pointer;
+    z-index: 2;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--hamburhidden);
+    text-align: center;
+    z-index: 1;
+    transition: transform 0.8s;
+    transform: translateX(200%);
+}
+.navbar-show{
+    transform: translateX(0);
+}
+.navbar-show .bx-menu{
+    color: var(--black);
 }
 .BG_Portfolio {
     width: 100%;
@@ -32,22 +62,23 @@
 .presentation{
     min-height: 640px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    gap: 2.2rem;
+    text-align: center;
     color: var(--gray);
     padding: 2rem 0.2rem;
-    text-align: center;
 }
 .presentation h1{
     font-size: 2.2rem;
+    color: var(--white);
 }
-.presentation h4{
-    line-height: 1.5rem;
-    font-size: 1.5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+.presentation-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.4rem;
 }
 .presentation img{
     width: 180px;
@@ -55,17 +86,12 @@
     border-radius: 2.5rem;
 }
 .presentation h3{
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-    text-align: center;
     font-size: 1.2rem;
 }
 .presentation strong{
     color: var(--icons);
 }
 .svg_icons {
-    display: flex;
-    gap: 1.5rem;
     font-size: 3rem;
 }
 .bxl-linkedin-square{
@@ -139,6 +165,12 @@
 ul{
     list-style: none;
 }
+a{
+    text-decoration: none;
+    vertical-align:baseline;
+    background:transparent;
+    color: var(--white);
+}
 .experiencie-Business h4{
     font-size: 1.5rem;
 }
@@ -206,6 +238,10 @@ ul{
     gap: 2rem;
     justify-content: space-around;
 }
+.Proyects-My_Proyects img{
+    width: 200px;
+    height: 150px;
+}
 .contact{
     background-color: var(--BG-presentation);
     min-height: 640px;
@@ -264,38 +300,54 @@ footer{
     width: 100%;
     background-color: var(--gray);
 }
-@media (min-width: 700px){
+@media (min-width: 690px){
+    .bx-menu{
+        display: none;
+    }
+    .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 7%;
+        background-color: var(--hamburhidden);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+        z-index: 1;
+        transition: transform 0.8s;
+        transform: translateX(0%);
+    }
+    .menu-navbar{
+        display: flex;
+        gap: 1rem;
+    }
     .presentation{
+        padding: 2rem;
         display: grid;
-        grid-template-columns: 1.5fr 1.7fr;
-        grid-template-rows: 0.1fr 0.1fr 0.1fr 0fr;
+        grid-template-columns: 1.2fr 1.7fr;
         color: var(--gray);
         justify-content: center;
         align-items: center;
         text-align: center;
-        gap: 0.1rem;
+        gap: 2rem;
         height: 200px;
+        font-size: 2rem;
     }
-    .presentation p{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .svg_icons{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        height: 20%;
-    }
-    .presentation h3{
-        grid-row: 3/4;
-        grid-column: 1/2;
+    .presentation-info{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
     }
     .presentation img{
         min-width: 400px;
         min-height: 400px;
-        grid-row: 1/5;
-        grid-column: 2/4;
         margin: auto;
-        padding-right: 1rem;
     }
     .swiper-wrapper{
         max-width: 500px;
