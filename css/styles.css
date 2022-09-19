@@ -1,6 +1,7 @@
 :root{
     --BG-portfolio: #1e2331;
     --BG-presentation: hsla(248, 24%, 24%, 0.842);
+    --BG-loader: hsla(244, 24%, 24%, 0.932);
     --icons: rgba(245, 152, 12, 0.911);
     --white: rgb(255,255,255);
     --gray: #a6ad9ce7;
@@ -16,6 +17,19 @@
     list-style: none;
     text-decoration: none;
     outline: none;
+}
+.loader-tittle{
+    background-color: var(--BG-loader);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--icons);
+    font-size: 4rem;
+    transition: background-color 0.5s;
 }
 .bx-menu{
     position: fixed;
@@ -237,6 +251,7 @@ a{
     display: grid;
     gap: 2rem;
     justify-content: space-around;
+    overflow-y: scroll;
 }
 .Proyects-My_Proyects img{
     width: 200px;
